@@ -2,7 +2,6 @@ name: 'Changes-test(eslint)'
 
 on:
   push:
-  pull:
   
 #  workflow_dispatch:
 
