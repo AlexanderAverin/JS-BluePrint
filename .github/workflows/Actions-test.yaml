@@ -2,6 +2,7 @@ name: 'Changes-test(eslint)'
 
 on:
   push:
+  pull_request:
   
 #  workflow_dispatch:
 
@@ -15,4 +16,5 @@ jobs:
       with:
         node-version: '14.x'
     - run: npm install
+    - name: Run eslint
     - run: npx eslint .
