@@ -1,3 +1,3 @@
-import test from '../src/test.js';
+import example from '../src/example.js';
 
-test();
+example();
