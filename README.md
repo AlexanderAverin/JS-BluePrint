@@ -1,4 +1,4 @@
-## JS-BluePrint
+# JS-BluePrint
 
 Use `make install` to setup
 

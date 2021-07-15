@@ -4,5 +4,5 @@ make lint:
 make install:
 	npm install
 
-make install dependencys:
+make ci:
 	npm ci
