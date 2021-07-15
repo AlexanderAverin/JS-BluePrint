@@ -1,5 +1,4 @@
-const example = () => {
-  console.log('JS-BluePrint');
-};
+const example = () => 'JS-BluePrint';
+// console.log('JS-BluePrint');
 
 export default example;

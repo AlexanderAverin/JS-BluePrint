@@ -1,8 +1,11 @@
-make lint:
+lint:
 	npx eslint .
 
-make install:
+install:
 	npm install
 
-make ci:
+ci:
 	npm ci
+
+test:
+	node --experimental-vm-modules "node_modules/.bin/jest"
