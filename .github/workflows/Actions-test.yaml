@@ -1,4 +1,4 @@
-name: 'Changes-test(eslint)'
+name: 'Changes-test'
 
 on:
   push:
@@ -17,3 +17,4 @@ jobs:
         node-version: '14.x'
     - run: npm install
     - run: npx eslint .
+    - run: make test
