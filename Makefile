@@ -2,7 +2,7 @@ lint:
 	npx eslint .
 
 install:
-	npm install
+	npm i
 
 ci:
 	npm ci
