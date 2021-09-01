@@ -18,7 +18,7 @@ jobs:
     - run: npm install
     - run: npx eslint .
     - run: make test
-      - name: test coverage
+    - name: test coverage
       uses: paambaati/codeclimate-action@v2.7.4
       env:
           CC_TEST_REPORTER_ID: ${{ secrets.CODECLIMATE_TEST_COVERAGE_SECRET_KEY }}
