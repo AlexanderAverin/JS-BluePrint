@@ -12,3 +12,7 @@ test:
 
 test-coverage:
 	node --experimental-vm-modules "node_modules/.bin/jest" --coverage
+
+formater-global:
+	npx prettier --write .
+
