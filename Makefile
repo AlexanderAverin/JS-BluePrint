@@ -8,10 +8,11 @@ ci:
 	npm ci
 
 test:
-	node --experimental-vm-modules "node_modules/.bin/jest"
+	NODE_OPTIONS=--experimental-vm-modules npx jest
 
 test-coverage:
-	node --experimental-vm-modules "node_modules/.bin/jest" --coverage
+	NODE_OPTIONS=--experimental-vm-modules npx jest --coverage
+
 
 formater-global:
 	npx prettier --write .
