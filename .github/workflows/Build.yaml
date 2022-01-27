@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
-      - run: npm install
+      - run: npm install eslint
       - run: npx eslint .
       - run: make test
       - name: test coverage
