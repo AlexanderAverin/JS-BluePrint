@@ -15,9 +15,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
-      - run: npm i eslint
-      - run: npm i eslint-config-airbnb-base
-      - run: npm i eslint-plugin-import
+      - run: npm install eslint
+      - run: npm install eslint-config-airbnb-base
+      - run: npm install eslint-plugin-import
+      - run: npm install eslint-plugin-jest@latest --save-dev
+      - run: npm install eslint-config-prettier@latest --save-dev
       - run: npx eslint .
       # - run: make test
       - name: test coverage
