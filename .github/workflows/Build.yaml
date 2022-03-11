@@ -15,13 +15,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '16.x'
-      - run: npm install eslint
-      - run: npm install eslint-config-airbnb-base
-      - run: npm install eslint-plugin-import
-      - run: npm install eslint-plugin-jest@latest --save-dev
-      - run: npm install eslint-config-prettier@latest --save-dev
+      - run: npm install --save-dev eslint
+      - run: npm install --save-dev eslint-config-airbnb-base
+      - run: npm install --save-dev eslint-plugin-import
+      - run: npm install --save-dev eslint-plugin-jest@latest
       - run: npx eslint .
-      # - run: make test
+      - run: make test
       - name: test coverage
         uses: paambaati/codeclimate-action@v2.7.4
         env:

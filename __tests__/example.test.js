@@ -1,6 +1,5 @@
-import { test, expect } from '@jest/globals';
-import example from '../src/example.js';
+import jestGlobals from '@jest/globals';
 
 test('example', () => {
-  expect(example()).toEqual('JS-BluePrint');
+  expect((() => 1)()).toEqual(1);
 });
